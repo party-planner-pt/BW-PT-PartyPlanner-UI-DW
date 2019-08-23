@@ -1,0 +1,67 @@
+// Navigation Styles here
+.navbar {
+  .containerWidth();
+  height: 9rem;
+  .displayFlex(space-between, center); 
+  flex-wrap: wrap;
+  // position: fixed;
+  // opacity: 0.75;
+
+  .company-name {
+    max-height: 100%;
+    max-width: 100%;
+    height: 8rem;
+    width: 8rem;
+    // margin-left: 1rem;
+  }
+
+  .left-bar {
+    .displayFlex(flex-start, center);
+    width: 40%;
+
+    @media @mobile {
+      width: 100%;
+      .displayFlex(center, center);
+    }
+  }
+  
+  .right-bar {
+    .displayFlex(flex-end, center);
+    width: 40%;
+    
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  a {
+    flex-wrap: nowrap;
+    color: black;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding-right: 1.3rem;
+    padding-top: 2.8rem;
+    white-space: nowrap;
+  }
+
+  .sign-up-btn {
+    .btn-style(10rem, 3.5rem, @btn-bg, @white);
+    padding-right: 1.3rem;
+    // padding-top: 2.8rem;
+    margin-top: 2rem;
+    margin-right: 1.2rem;
+    white-space: nowrap;
+    align-content: center;
+  }
+
+  @media @mobile {
+    flex-direction: column;
+    .displayFlex(center, center);
+    flex-wrap: nowrap;
+
+    img {
+      .phoneContainer();
+      .displayFlex(center, center);
+    }
+  }
+}
