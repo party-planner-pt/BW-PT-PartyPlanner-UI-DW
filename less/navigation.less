@@ -1,18 +1,28 @@
 // Navigation Styles here
 .navbar {
   .containerWidth();
-  height: 9rem;
   .displayFlex(space-between, center); 
+  height: 9rem;
   flex-wrap: wrap;
   // position: fixed;
   // opacity: 0.75;
 
-  .company-name {
+  @media @mobile {
+    flex-direction: column;
+    justify-content: center;
+    height: 10%;
+  }
+
+  .logo {
     max-height: 100%;
     max-width: 100%;
     height: 8rem;
     width: 8rem;
     // margin-left: 1rem;
+
+    @media @mobile {
+      margin: 0 auto;
+    }
   }
 
   .left-bar {
@@ -31,17 +41,24 @@
     
     @media @mobile {
       width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+      margin-bottom: 1.5rem;
     }
   }
 
   a {
     flex-wrap: nowrap;
-    color: black;
+    color: @black;
     font-size: 1.8rem;
     text-decoration: none;
     padding-right: 1.3rem;
     padding-top: 2.8rem;
     white-space: nowrap;
+
+    &:hover {
+      color: @second-color;
+    }
   }
 
   .sign-up-btn {
