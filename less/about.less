@@ -1,0 +1,28 @@
+.about {
+  .containerWidth();
+  padding: 2.5rem 0;
+  width: 90%;
+    
+  img {
+    display: block;
+    width: 80%;
+    padding-bottom: 4rem;
+    margin: 0 auto;
+
+    @media @tablet {
+      width: 90%;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+
+  P {
+    padding: 1.5rem 0;
+  }
+}
