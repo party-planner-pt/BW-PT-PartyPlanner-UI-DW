@@ -1,0 +1,36 @@
+.services {
+  .containerWidth();
+  padding: 2rem 0;
+  margin-top: 2rem;
+  width: 90%;
+
+  @media @mobile {
+    display: block;
+    margin: 0 auto;
+  }
+
+  P {
+    width: 75%;
+
+    @media @tablet {
+      width: 85%;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style: disc outside none;
+    margin-left: 4rem;
+    padding: 1rem 0;
+    margin-bottom: 13.5rem;
+
+    li {
+      line-height: 1.5;
+      font-size: 1.7rem;
+      padding: 0.5rem 0;
+    }
+  }
+}
