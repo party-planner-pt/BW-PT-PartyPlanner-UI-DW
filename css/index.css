@@ -232,6 +232,18 @@ img {
   transition: color 0.3s ease-in-out;
   color: #ff8b00;
 }
+@media (max-width: 590px) {
+  .navbar a {
+    font-size: 1.5rem;
+    padding-right: 0.85rem;
+  }
+}
+@media (max-width: 500px) {
+  .navbar a {
+    font-size: 1.8rem;
+    padding-right: 1.3rem;
+  }
+}
 .navbar .sign-up-btn {
   padding: 0.8rem 1.8rem;
   width: 10rem;
@@ -254,21 +266,23 @@ img {
   border: 2px solid #d82b09;
   transition: all 0.7s ease-in-out;
 }
-@media (max-width: 500px) {
-  .navbar {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
+@media (max-width: 590px) {
+  .navbar .sign-up-btn {
+    padding: 0.8rem 1.8rem;
+    width: 10rem;
+    height: 3.5rem;
+    background: #d82b09;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
   }
-  .navbar img {
-    max-width: 50rem;
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  .navbar .sign-up-btn:hover {
+    background: #FFFFFF;
+    color: #d82b09;
+    border: 2px solid #d82b09;
+    transition: all 0.7s ease-in-out;
   }
 }
 .footer {

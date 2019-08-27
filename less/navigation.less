@@ -60,6 +60,16 @@
       transition: color 0.3s ease-in-out;
       color: @second-color;
     }
+
+    @media (max-width: 590px) {
+      font-size: 1.5rem;
+      padding-right: 0.85rem;
+    }
+
+    @media @mobile {
+      font-size: 1.8rem;
+      padding-right: 1.3rem;
+    }
   }
 
   .sign-up-btn {
@@ -70,16 +80,22 @@
     margin-right: 1.2rem;
     white-space: nowrap;
     align-content: center;
-  }
 
-  @media @mobile {
-    flex-direction: column;
-    .displayFlex(center, center);
-    flex-wrap: nowrap;
-
-    img {
-      .phoneContainer();
-      .displayFlex(center, center);
+    @media (max-width: 590px) {
+      .btn-style(10rem, 3.5rem, @btn-bg, @white);
     }
   }
+  
+
+  // @media @mobile {
+  //   flex-direction: column;
+  //   .displayFlex(center, center);
+  //   flex-wrap: nowrap;
+    
+
+  //   img {
+  //     .phoneContainer();
+  //     .displayFlex(center, center);
+  //   }
+  // }
 }
