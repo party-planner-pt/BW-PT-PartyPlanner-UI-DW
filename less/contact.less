@@ -4,6 +4,15 @@
   width: 90%;
   margin-top: 2rem;
 
+  img {
+    max-height: 300px;
+    margin-bottom: 2rem;
+
+    @media @mobile {
+      display: none;
+    }
+  }
+
   form {
     margin: 2rem 0 2rem 2rem;
     width: 55rem;
@@ -17,6 +26,11 @@
 
     @media @mobile {
       width: 40rem;
+      margin: 2rem 0;
+    }
+
+    @media (max-width: 440px) {
+      width: 34rem;
     }
 
     div {
@@ -36,6 +50,10 @@
       @media @mobile {
         width: 38rem;
       }
+
+      @media (max-width: 440px) {
+        width: 32rem;
+      }
     }
 
     textarea {
@@ -52,6 +70,10 @@
 
       @media @mobile {
         margin-left: 11.5rem;
+      }
+
+      @media (max-width: 440px) {
+        margin-left: 9.5rem;
       }
     }
   }
